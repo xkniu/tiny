@@ -8,9 +8,9 @@ public abstract class AbstractCostAwareSorter extends AbstractSorter implements 
 
     private final Stopwatch stopwatch = Stopwatch.createUnstarted();
 
-    private int cmpCount = 0;
+    private long cmpCount = 0;
 
-    private int swapCount = 0;
+    private long swapCount = 0;
 
     @Override
     protected void preProcess(Comparable[] a) {
@@ -20,8 +20,8 @@ public abstract class AbstractCostAwareSorter extends AbstractSorter implements 
 
     private void resetStatistics() {
         stopwatch.reset();
-        cmpCount = 0;
-        swapCount = 0;
+        cmpCount = 0L;
+        swapCount = 0L;
     }
 
     @Override
@@ -56,11 +56,11 @@ public abstract class AbstractCostAwareSorter extends AbstractSorter implements 
         return stopwatch.elapsed(timeUnit);
     }
 
-    public int getCmpCount() {
+    public long getCmpCount() {
         return cmpCount;
     }
 
-    public int getSwapCount() {
+    public long getSwapCount() {
         return swapCount;
     }
 }
