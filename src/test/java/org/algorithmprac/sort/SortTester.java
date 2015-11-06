@@ -1,10 +1,13 @@
 package org.algorithmprac.sort;
 
 import org.algorithmprac.utils.DataProvider;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+@FixMethodOrder(MethodSorters.DEFAULT)
 public class SortTester {
 
     private static final Logger log = LoggerFactory.getLogger(SortTester.class);
@@ -12,7 +15,7 @@ public class SortTester {
     private static Integer[] testCaseData;
 
     static {
-        testCaseData = DataProvider.getUnorderedIntegerArray(100, 10000);
+        testCaseData = DataProvider.getUnorderedIntegerArray(10000, 1000000);
     }
 
     private static Integer[] getTestCaseDataCopy() {
@@ -36,6 +39,13 @@ public class SortTester {
     @Test
     public void testBubbleSort() {
         CostAwareSorter costAwareSorter = Sorters.getSorter(Sorters.SorterType.BUBBLE);
+        costAwareSorter.sort(getTestCaseDataCopy());
+        log.info("{}, {}", costAwareSorter.getName(), costAwareSorter.getReadableCost());
+    }
+
+    @Test
+    public void testShellSort() {
+        CostAwareSorter costAwareSorter = Sorters.getSorter(Sorters.SorterType.SHELL);
         costAwareSorter.sort(getTestCaseDataCopy());
         log.info("{}, {}", costAwareSorter.getName(), costAwareSorter.getReadableCost());
     }

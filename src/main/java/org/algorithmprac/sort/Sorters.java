@@ -10,6 +10,8 @@ public class Sorters {
                 return newInsertionSorter();
             case BUBBLE:
                 return newBubbleSorter();
+            case SHELL:
+                return newShellSorter();
             default:
                 return newDefaultSorter();
         }
@@ -30,8 +32,11 @@ public class Sorters {
     public static CostAwareSorter newInsertionSorter() {
         return new InsertionSorter();
     }
+    public static CostAwareSorter newShellSorter() {
+        return new ShellSorter();
+    }
 
     public enum SorterType {
-        SELECTION, INSERTION, BUBBLE
+        SELECTION, INSERTION, BUBBLE, SHELL
     }
 }
