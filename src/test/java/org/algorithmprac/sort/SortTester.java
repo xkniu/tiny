@@ -15,7 +15,7 @@ public class SortTester {
     private static Integer[] testCaseData;
 
     static {
-        testCaseData = DataProvider.getUnorderedIntegerArray(10000, 1000000);
+        testCaseData = DataProvider.getUnorderedUniqueIntegerArray(10000);
     }
 
     private static Integer[] getTestCaseDataCopy() {
