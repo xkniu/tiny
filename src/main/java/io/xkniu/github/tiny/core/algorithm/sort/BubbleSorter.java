@@ -1,7 +1,8 @@
-package org.algorithmprac.sort;
+package io.xkniu.github.tiny.core.algorithm.sort;
 
 /**
  * 冒泡排序 [stable] [!online].
+ *
  * 冒泡排序的时间复杂度为 Ω(n^2), 比较次数始终为 Ω(n^2), 交换次数为数组中 [逆序数个数].
  */
 public class BubbleSorter extends AbstractCostAwareSorter {

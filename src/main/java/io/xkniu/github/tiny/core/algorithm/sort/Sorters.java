@@ -1,4 +1,4 @@
-package org.algorithmprac.sort;
+package io.xkniu.github.tiny.core.algorithm.sort;
 
 public class Sorters {
 

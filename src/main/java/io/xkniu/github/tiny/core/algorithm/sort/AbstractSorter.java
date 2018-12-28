@@ -1,5 +1,8 @@
-package org.algorithmprac.sort;
+package io.xkniu.github.tiny.core.algorithm.sort;
 
+/**
+ * Base class of sorter to supply base comparision and swap operation.
+ */
 public abstract class AbstractSorter implements Sorter {
 
     public void sort(Comparable[] a) {

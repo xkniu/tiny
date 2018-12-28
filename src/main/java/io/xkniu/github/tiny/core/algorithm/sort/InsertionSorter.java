@@ -1,7 +1,8 @@
-package org.algorithmprac.sort;
+package io.xkniu.github.tiny.core.algorithm.sort;
 
 /**
  * 插入排序 [stable] [online].
+ *
  * 插入排序的时间复杂度为 O(n^2), 交换次数为数组中 [逆序数个数], 比较次数最少为 [逆序数个数], 最多为 [逆序数个数 + n - 1].
  */
 public class InsertionSorter extends AbstractCostAwareSorter {

@@ -1,7 +1,8 @@
-package org.algorithmprac.sort;
+package io.xkniu.github.tiny.core.algorithm.sort;
 
 /**
  * 希尔排序 [!stable] [!online].
+ *
  * 时间复杂度的分析很复杂, 至今仍是一项挑战. 该实现的最坏时间复杂度为 O(N^(3/2)).
  */
 public class ShellSorter extends AbstractCostAwareSorter {

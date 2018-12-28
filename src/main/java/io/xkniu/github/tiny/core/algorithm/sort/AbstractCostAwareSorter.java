@@ -1,9 +1,12 @@
-package org.algorithmprac.sort;
+package io.xkniu.github.tiny.core.algorithm.sort;
 
 import com.google.common.base.Stopwatch;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Base class of sorter to record the count of comparision and swap.
+ */
 public abstract class AbstractCostAwareSorter extends AbstractSorter implements CostAwareSorter {
 
     private final Stopwatch stopwatch = Stopwatch.createUnstarted();

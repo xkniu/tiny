@@ -1,5 +1,8 @@
-package org.algorithmprac.sort;
+package io.xkniu.github.tiny.core.algorithm.sort;
 
+/**
+ * Sorter.
+ */
 public interface Sorter {
 
     String getName();
