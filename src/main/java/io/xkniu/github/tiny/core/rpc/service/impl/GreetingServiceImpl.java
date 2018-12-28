@@ -1,6 +1,6 @@
-package io.xkniu.github.tiny.rpc.service.impl;
+package io.xkniu.github.tiny.core.rpc.service.impl;
 
-import io.xkniu.github.tiny.rpc.service.GreetingService;
+import io.xkniu.github.tiny.core.rpc.service.GreetingService;
 
 import java.util.Date;
 

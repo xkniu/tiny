@@ -1,4 +1,4 @@
-package io.xkniu.github.tiny.rpc.service;
+package io.xkniu.github.tiny.core.rpc.service;
 
 /**
  * 问候服务

@@ -1,4 +1,4 @@
-package io.xkniu.github.tiny.rpc.client;
+package io.xkniu.github.tiny.core.rpc.client;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;

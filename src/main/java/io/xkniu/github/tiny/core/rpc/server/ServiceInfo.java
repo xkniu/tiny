@@ -1,4 +1,4 @@
-package io.xkniu.github.tiny.rpc.server;
+package io.xkniu.github.tiny.core.rpc.server;
 
 import java.util.Objects;
 
