@@ -1,4 +1,4 @@
-package io.xkniu.github.tiny.core.algorithm.sort.utils;
+package io.xkniu.github.tiny.core.algorithm.utils;
 
 import java.util.Arrays;
 import java.util.Collections;

@@ -1,10 +1,12 @@
-package io.xkniu.github.tiny.core.algorithm.sort;
+package io.xkniu.github.tiny.core.algorithm;
 
-import io.xkniu.github.tiny.core.algorithm.sort.utils.DataProvider;
+import io.xkniu.github.tiny.core.algorithm.sort.CostAwareSorter;
+import io.xkniu.github.tiny.core.algorithm.sort.Sorters;
+import io.xkniu.github.tiny.core.algorithm.utils.DataProvider;
 import io.xkniu.github.tiny.core.base.AbstractTestBase;
 import org.junit.Test;
 
-public class SortTester extends AbstractTestBase {
+public class SortTest extends AbstractTestBase {
 
     @Test
     public void testSelectionSort() {
