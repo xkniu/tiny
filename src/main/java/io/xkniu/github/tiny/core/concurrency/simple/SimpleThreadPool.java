@@ -14,7 +14,7 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class SimpleThreadPool {
 
-    private Lock mainLock = new ReentrantLock();
+    private final Lock mainLock = new ReentrantLock();
 
     private final List<Worker> workers = new ArrayList<>();
 
