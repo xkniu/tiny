@@ -9,13 +9,15 @@ import io.xkniu.github.tiny.core.rpc.service.impl.GreetingServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class RpcTest extends AbstractTestBase {
 
     /**
      * 启动一个 RPC server
      */
     @Before
-    public void testServer() {
+    public void testServer() throws Exception {
         RpcServer rpcServer = new RpcServer(8765);
 
         // 注册 greeting 服务
@@ -24,6 +26,7 @@ public class RpcTest extends AbstractTestBase {
 
         // 异步启动 server
         rpcServer.startAsync();
+        TimeUnit.SECONDS.sleep(2);
     }
 
     @Test
